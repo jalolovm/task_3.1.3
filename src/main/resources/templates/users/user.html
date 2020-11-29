@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" th:src="@{js/main.js}" src="/static/js/main.js"></script>
+</head>
+<body>
+<div th:fragment="navPanel">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-item">
+                <a href="#" class="navbar-brand"></a>
+                <td>User:</td>
+                <td th:utext="${userNow.username}"></td>
+            </a>
+            <td>with role:</td>
+            <td th:utext="${userNow.getRoleString()}"></td>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/logout" class="nav-link">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-2">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-user-tab" data-toggle="pill" href="#v-pills-user" role="tab"
+               aria-controls="v-pills-user" aria-selected="true">User</a>
+        </div>
+    </div>
+    <div class="col-10">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">
+                <h1>User information-page</h1>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Role</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td th:utext="${userNow.getId()}">id</td>
+                            <td th:utext="${userNow.getUsername()}">name</td>
+                            <td th:utext="${userNow.getRoleString()}">roles</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
