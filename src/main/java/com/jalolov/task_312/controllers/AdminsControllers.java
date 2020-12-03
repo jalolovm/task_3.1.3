@@ -30,7 +30,7 @@ public class AdminsControllers {
         model.addAttribute("userNow", userNow);
         model.addAttribute("users", userService.getAll());
         model.addAttribute("user", new User());
-        return "admin/user-list";
+             return "admin/user-list";
     }
 
     @PostMapping()
