@@ -1,7 +1,7 @@
-package com.jalolov.task_312.security;
+package com.jalolov.task_313.security;
 
-import com.jalolov.task_312.model.User;
-import com.jalolov.task_312.repository.UserRepository;
+import com.jalolov.task_313.model.User;
+import com.jalolov.task_313.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.jalolov.task_312.security;
+package com.jalolov.task_313.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

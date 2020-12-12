@@ -1,4 +1,4 @@
-package com.jalolov.task_312;
+package com.jalolov.task_313;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

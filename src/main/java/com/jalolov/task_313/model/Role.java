@@ -1,4 +1,4 @@
-package com.jalolov.task_312.model;
+package com.jalolov.task_313.model;
 
 import org.springframework.security.core.GrantedAuthority;
 

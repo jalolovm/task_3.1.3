@@ -1,7 +1,7 @@
-package com.jalolov.task_312.service;
+package com.jalolov.task_313.service;
 
-import com.jalolov.task_312.model.User;
-import com.jalolov.task_312.repository.UserRepository;
+import com.jalolov.task_313.model.User;
+import com.jalolov.task_313.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

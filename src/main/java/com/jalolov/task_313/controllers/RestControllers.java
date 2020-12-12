@@ -1,7 +1,7 @@
-package com.jalolov.task_312.controllers;
+package com.jalolov.task_313.controllers;
 
-import com.jalolov.task_312.model.User;
-import com.jalolov.task_312.service.UserService;
+import com.jalolov.task_313.model.User;
+import com.jalolov.task_313.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
